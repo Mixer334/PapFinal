@@ -26,7 +26,7 @@ export class MyApp {
       { title: 'Início', component: HomePage },
       { title: 'Noticías', component: ListPage },
       { title: 'Sobre', component: AboutPage },
-      { title: 'Contactos', component: ContactoPage}
+      { title: 'Contactos', component: ContactoPage },
     ];
 
   }

@@ -23,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     AboutPage,
+    ContactoPage,
     QuintaPage,
     ValongoPage,
     JoaoPage,
@@ -43,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ValongoPage,
     JoaoPage,
     AmatoPage,
-    CebolaisPage
+    CebolaisPage,
+    ContactoPage
   ],
   providers: [
     StatusBar,
