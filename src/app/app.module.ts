@@ -6,6 +6,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
+import { ContactoPage } from '../pages/contacto/contacto';
+import { CebolaisPage } from '../pages/2cebolais/cebolais';
+import { AmatoPage } from '../pages/3amato/amato';
+import { JoaoPage } from '../pages/1joao/joao';
+import { ValongoPage } from '../pages/5valongo/valongo';
+import { QuintaPage } from '../pages/4quinta/quinta';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -16,7 +22,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    AboutPage
+    AboutPage,
+    QuintaPage,
+    ValongoPage,
+    JoaoPage,
+    AmatoPage,
+    CebolaisPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +38,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    AboutPage
+    AboutPage,
+    QuintaPage,
+    ValongoPage,
+    JoaoPage,
+    AmatoPage,
+    CebolaisPage
   ],
   providers: [
     StatusBar,
