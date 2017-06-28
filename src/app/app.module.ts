@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {HttpModule} from '@angular/http';
 
+import {PostPage} from '../pages/post/post';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -12,6 +14,7 @@ import { AmatoPage } from '../pages/3amato/amato';
 import { JoaoPage } from '../pages/1joao/joao';
 import { ValongoPage } from '../pages/5valongo/valongo';
 import { QuintaPage } from '../pages/4quinta/quinta';
+import {NoticiasPage} from '../pages/noticias/noticias';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -28,11 +31,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ValongoPage,
     JoaoPage,
     AmatoPage,
-    CebolaisPage
+    CebolaisPage,
+    NoticiasPage,
+    PostPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +51,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JoaoPage,
     AmatoPage,
     CebolaisPage,
-    ContactoPage
+    ContactoPage,
+    NoticiasPage,
+    PostPage,
   ],
   providers: [
     StatusBar,
