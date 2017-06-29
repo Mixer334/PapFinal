@@ -13,13 +13,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'post.html',
 })
 export class PostPage {
-  post:any
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
-      this.post= navParams.get('post_data');
-      console.log(this.post);
-    }
-
-    ionViewDidLoad() {
-      console.log('ionViewDidLoad PostPage');
-    }
+  selectedItem:any;
+  constructor(private nav: NavController, navParams: NavParams) {
+    // If we navigated to this page, we will have an item available as a nav param
+    this.selectedItem = navParams.get('item');
   }
+
+}

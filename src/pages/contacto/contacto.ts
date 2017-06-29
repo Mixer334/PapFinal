@@ -25,7 +25,7 @@ export class ContactoPage {
 
   launch(url) {
     this.platform.ready().then(() => {
-        open(url, "_blank", "location=no");
+        window.open(url, "_system", "location=no");
     });
 }
 
