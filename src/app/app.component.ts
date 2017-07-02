@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { ContactoPage } from '../pages/contacto/contacto';
 import {NoticiasPage} from '../pages/noticias/noticias';
+import { JoaoPage } from '../pages/1joao/joao';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import {NoticiasPage} from '../pages/noticias/noticias';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = JoaoPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -48,5 +49,5 @@ export class MyApp {
     this.nav.setRoot(page.component);
 
   }
-  
+
 }

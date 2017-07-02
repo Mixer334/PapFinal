@@ -57,6 +57,6 @@ presentLoadingCustom() {
 
   setTimeout(() => {
     loading.dismiss();
-  }, 5000);
+  }, 2000);
 }*/
 }
