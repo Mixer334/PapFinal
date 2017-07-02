@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 import {Http} from '@angular/http';
 import {PostPage} from '../../pages/post/post';
 import {LoadingController} from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+import {JoaoPage} from '../../pages/1joao/joao';
 
 
 @Component({
@@ -15,13 +17,15 @@ export class HomePage {
 	api_url: string = 'http://aeal.edu.pt/wp-json/wp/v2/posts';
 	items: any;
 
-	constructor( private http: Http,public navCtrl: NavController, public loadingCtrl: LoadingController) {
+	constructor( private http: Http,public navCtrl: NavController, public loadingCtrl: LoadingController, private alertCtrl: AlertController) {
+
   this.http.get(this.api_url).map(res => res.json()).subscribe(data => {
 
           this.items=data;
         }, (error)=> {
            console.log('error',error);
         });
+        this.presentAlert()
         this.presentLoadingCustom()
     }
 
@@ -29,7 +33,14 @@ export class HomePage {
         this.navCtrl.push(PostPage, { item: item });
     }
 
-
+    presentAlert() {
+      let alert = this.alertCtrl.create({
+        title: 'Bem vindo',
+        subTitle: 'Olá <div ngmodel="customQuote"> </div>',
+        buttons: ['Dismiss']
+      });
+      alert.present();
+    }
 
 presentLoadingCustom() {
   let loading = this.loadingCtrl.create({

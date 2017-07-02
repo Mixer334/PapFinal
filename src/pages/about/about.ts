@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AlertController} from 'ionic-angular';
+import {LoadingController} from 'ionic-angular';
 
 /**
  * Generated class for the AboutPage page.
@@ -15,7 +16,8 @@ import {AlertController} from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertController: AlertController) {
+  constructor(public loadingCtrl: LoadingController,public navCtrl: NavController, public navParams: NavParams, private alertController: AlertController) {
+    this.presentLoadingCustom()
   }
 
   amatol() {
@@ -38,6 +40,23 @@ joaor() {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
+  }
+  presentLoadingCustom() {
+    let loading = this.loadingCtrl.create({
+      spinner:`hide`,
+      content: `
+      <div class="preloader">
+      <div class="loader"></div>
+      </div>
+      Carregando`,
+      duration: 2000
+    });
+
+    loading.onDidDismiss(() => {
+      console.log('Dismissed loading');
+    });
+
+    loading.present();
   }
 
 }
