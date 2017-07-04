@@ -48,7 +48,7 @@ joaor() {
       <div class="preloader">
       <div class="loader"></div>
       </div>
-      <img src="assets/RedBook.png">`,
+      <img src="assets/icon/RedBook.png">`,
       duration: 1500
     });
 
