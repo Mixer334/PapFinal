@@ -48,8 +48,8 @@ joaor() {
       <div class="preloader">
       <div class="loader"></div>
       </div>
-      Carregando`,
-      duration: 2000
+      <img src="assets/RedBook.png">`,
+      duration: 1500
     });
 
     loading.onDidDismiss(() => {

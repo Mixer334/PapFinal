@@ -37,7 +37,7 @@ presentLoadingCustom() {
     <div class="preloader">
     <div class="loader"></div>
     </div>
-    Carregando`,
+    <img src="assets/icon/RedBook.png" style= "width:30%;height:20%">`,
     duration: 1500
   });
 

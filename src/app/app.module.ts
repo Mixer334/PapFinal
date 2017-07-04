@@ -6,15 +6,11 @@ import {HttpModule} from '@angular/http';
 import {PostPage} from '../pages/post/post';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { ContactoPage } from '../pages/contacto/contacto';
-import { CebolaisPage } from '../pages/2cebolais/cebolais';
-import { AmatoPage } from '../pages/3amato/amato';
-import { JoaoPage } from '../pages/1joao/joao';
-import { ValongoPage } from '../pages/5valongo/valongo';
-import { QuintaPage } from '../pages/4quinta/quinta';
-import {NoticiasPage} from '../pages/noticias/noticias';
+import { JoaoPage } from '../pages/RootPage/joao';
+
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,15 +20,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+
     AboutPage,
     ContactoPage,
-    QuintaPage,
-    ValongoPage,
+
     JoaoPage,
-    AmatoPage,
-    CebolaisPage,
-    NoticiasPage,
+
     PostPage,
   ],
   imports: [
@@ -44,15 +37,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+
     AboutPage,
-    QuintaPage,
-    ValongoPage,
+    
     JoaoPage,
-    AmatoPage,
-    CebolaisPage,
+
     ContactoPage,
-    NoticiasPage,
     PostPage,
   ],
   providers: [

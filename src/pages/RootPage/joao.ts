@@ -20,17 +20,26 @@ import {HomePage} from '../home/home';
 export class JoaoPage {
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertController: AlertController) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+
+}
 
   pushPage(){
+    let alert = this.alertCtrl.create({
+      title: 'Bem vindo',
+      subTitle: 'Esta aplicação é um projeto final de curso, espero que gostem.',
+      buttons: ['Começar']
+    });
+    alert.present();
+
     this.navCtrl.push(HomePage, {
 
     })
+
   }
 
   openFilters() {
-      let alert = this.alertController.create({
+      let alert = this.alertCtrl.create({
           title: 'AEAL',
           subTitle: 'Bem vindo à app do Agrupamento de Escolas Amato Lusitano <p> Diverte-te! ;)',
           buttons: ['OK']
@@ -38,6 +47,7 @@ export class JoaoPage {
 
       alert.present();
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JoaoPage');
