@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ContactoPage } from '../pages/contacto/contacto';
-import { JoaoPage } from '../pages/1joao/joao';
+import { JoaoPage } from '../pages/RootPage/joao';
 
 @Component({
   templateUrl: 'app.html'
