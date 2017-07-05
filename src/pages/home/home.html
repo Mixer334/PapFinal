@@ -15,7 +15,6 @@
       <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <h2 [innerHTML]="item.title.rendered"></h2>
       <p [innerHTML]="item.excerpt.rendered"></p>
-
       </button>
     </ion-list>
 
