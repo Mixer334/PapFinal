@@ -13,7 +13,6 @@
 </ion-list-header>
   <ion-list>
       <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <div [innerHTML]="item.media.rendered"> </div>
       <h2 [innerHTML]="item.title.rendered"></h2>
       <p [innerHTML]="item.excerpt.rendered"></p>
 
